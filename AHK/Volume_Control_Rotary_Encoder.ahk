@@ -78,13 +78,13 @@ GetAppVolume(PID)
 >^Volume_Up::
     Process Exist, Spotify.exe
     SPOTIFY_PID := ErrorLevel
-    SetAppVolume(SPOTIFY_PID, GetAppVolume(SPOTIFY_PID) + 2)
+    SetAppVolume(SPOTIFY_PID, GetAppVolume(SPOTIFY_PID) + 4)
     Return
 
 >^Volume_Down::
     Process Exist, Spotify.exe
     SPOTIFY_PID := ErrorLevel
-    SetAppVolume(SPOTIFY_PID, GetAppVolume(SPOTIFY_PID) - 2)
+    SetAppVolume(SPOTIFY_PID, GetAppVolume(SPOTIFY_PID) - 4)
     Return
 
 ; This one pauses the playing media

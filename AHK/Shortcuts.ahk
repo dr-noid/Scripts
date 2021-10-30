@@ -10,13 +10,18 @@
     Run, %LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe
     return
 
+; Fn + Del = Discord mute mic
+; Fn + PgUp = Discord deafen
+
+; TODO change
+; Fn + PgDn 
 F15::
-    Run, https://isas.han.nl
-    Run, https://onderwijsonline.han.nl/elearning
+    MsgBox % "This hotkey has not been setup yet.""
     return
 
+; Fn + PgDn 
 F16::
-    MsgBox This hotkey has not been setup yet.
+    MsgBox % "This hotkey has not been setup yet.""
     return
 
 ; Search latest copied string on google.
