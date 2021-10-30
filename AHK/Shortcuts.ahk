@@ -1,4 +1,4 @@
-; https://www.github.com/dr-noid/shortcuts
+; https://www.github.com/dr-noid/Scripts
 
 #include Runner.ahk
 
