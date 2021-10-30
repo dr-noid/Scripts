@@ -1,33 +1,46 @@
+; https://www.github.com/dr-noid/shortcuts
+
+#include Runner.ahk
+
+runner := new Runner()
+
 ;--------------------------------------------------
 ;--------------------------------------------------
 ;;;;;;;;;;;;;;;;;; GENERIC MACROS ;;;;;;;;;;;;;;;;;
 ;--------------------------------------------------
 ;--------------------------------------------------
 
-; Launch Windows Terminal
-; Left Windows + Escape
-<#`::
-    Run, %LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe
-    return
-
 ; Fn + Del = Discord mute mic
 ; Fn + PgUp = Discord deafen
 
-; TODO change
+; Launch Windows Terminal
+; Left Windows + `(Grave)
+<#`::
+{
+    runner.terminal()
+    return
+}
+
+; undefined
 ; Fn + PgDn 
 F15::
-    MsgBox % "This hotkey has not been setup yet.""
+{
+    runner.undefined()
     return
+}
 
+; undefined
 ; Fn + PgDn 
 F16::
-    MsgBox % "This hotkey has not been setup yet.""
+{
+    runner.undefined()
     return
+}
 
 ; Search latest copied string on google.
 ; Fn + Ctrl + End
 ; TODO change this up
-^ & F16::
+^F16::
     ^+c::
     {
         Run, https://www.google.com/search?q=%clipboard%
@@ -41,7 +54,7 @@ F16::
 ;--------------------------------------------------
 ;--------------------------------------------------
 
-; PAUSE
+; Pause
 ; Right Control + End
 >^End::
 {
@@ -49,15 +62,7 @@ F16::
     return
 }
 
-; something new
-; Left Alt + n
-<!n::
-{
-    Send test
-    return
-}
-
-; NEXT TRACK
+; Next track
 ; Right Control + Right Arrow
 >^Right::
 {
@@ -65,7 +70,7 @@ F16::
     return
 }
 
-; PREV TRACK
+; Prev track
 ; Right Control + Left Arrow
 >^Left::
 {
@@ -73,10 +78,18 @@ F16::
     return
 }
 
-; PREV TRACK
+; Prev track
 ; Right Control + Down Arrow
 >^Down::
 {
     Send {Launch_Media}
+    return
+}
+
+; Something new
+; Left Alt + n
+<!n::
+{
+    Send % "test"
     return
 }
