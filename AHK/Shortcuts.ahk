@@ -54,16 +54,18 @@ F16::
 
 ::asdf::
 ; runner.undefined()
-MsgBox % "tuinkabouter"
+MsgBox % "asdf"
 Return
 
-~Space & 1::
+; LAlt + LCtrl + 1 = VDesktop to left
+~<!<^1::
 {
     Send {LCtrl down}{LWin down}{Left down}{LWin up}{LCtrl up}{Left up}
     Return
 }
 
-~Space & 2::
+; LAlt + LCtrl + 2 = VDesktop to right
+~<!<^2::
 {
     Send {LCtrl down}{LWin down}{Right down}{LWin up}{LCtrl up}{right up}
     Return
