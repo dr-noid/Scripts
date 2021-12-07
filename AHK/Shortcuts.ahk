@@ -1,6 +1,9 @@
 ; https://www.github.com/dr-noid/Scripts
 
 #include Runner.ahk
+#SingleInstance Force
+#KeyHistory 0
+#NoEnv
 
 runner := new Runner()
 
@@ -10,15 +13,15 @@ runner := new Runner()
 ;--------------------------------------------------
 ;--------------------------------------------------
 
-; Fn + Del = Discord mute mic
-; Fn + PgUp = Discord deafen
+; Fn + Del = F13 = Discord mute mic
+; Fn + PgUp = F14 = Discord deafen
 
 ; Launch Windows Terminal
 ; Left Windows + `(Grave)
 <#`::
 {
     runner.terminal()
-    return
+    Return
 }
 
 ; undefined
@@ -26,7 +29,7 @@ runner := new Runner()
 F15::
 {
     runner.undefined()
-    return
+    Return
 }
 
 ; undefined
@@ -34,18 +37,39 @@ F15::
 F16::
 {
     runner.undefined()
-    return
+    Return
 }
 
 ; Search latest copied string on google.
 ; Fn + Ctrl + End
 ; TODO change this up
 ^F16::
+{
     ^+c::
     {
         Run, https://www.google.com/search?q=%clipboard%
-        return
+        Return
     }
+}
+
+::asdf::
+; runner.undefined()
+MsgBox % "tuinkabouter"
+Return
+
+~Space & 1::
+{
+    Send {LCtrl down}{LWin down}{Left down}{LWin up}{LCtrl up}{Left up}
+    Return
+}
+
+~Space & 2::
+{
+    Send {LCtrl down}{LWin down}{Right down}{LWin up}{LCtrl up}{right up}
+    Return
+}
+
+:*:aa::hello_world
 
 
 ;--------------------------------------------------
@@ -59,7 +83,7 @@ F16::
 >^End::
 {
     Send {Media_Play_Pause}
-    return
+    Return
 }
 
 ; Next track
@@ -67,7 +91,7 @@ F16::
 >^Right::
 {
     Send {Media_Next}
-    return
+    Return
 }
 
 ; Prev track
@@ -75,7 +99,7 @@ F16::
 >^Left::
 {
     Send {Media_Prev}
-    return
+    Return
 }
 
 ; Prev track
@@ -83,7 +107,7 @@ F16::
 >^Down::
 {
     Send {Launch_Media}
-    return
+    Return
 }
 
 ; Something new
@@ -91,5 +115,5 @@ F16::
 <!n::
 {
     Send % "test"
-    return
+    Return
 }
