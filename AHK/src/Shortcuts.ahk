@@ -52,11 +52,6 @@ F16::
     }
 }
 
-::asdf::
-; runner.undefined()
-MsgBox % "asdf"
-Return
-
 ; LAlt + LCtrl + 1 = VDesktop to left
 ~<!<^1::
 {
@@ -70,9 +65,6 @@ Return
     Send {LCtrl down}{LWin down}{Right down}{LWin up}{LCtrl up}{right up}
     Return
 }
-
-:*:aa::hello_world
-
 
 ;--------------------------------------------------
 ;--------------------------------------------------
@@ -112,10 +104,3 @@ Return
     Return
 }
 
-; Something new
-; Left Alt + n
-<!n::
-{
-    Send % "test"
-    Return
-}

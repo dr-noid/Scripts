@@ -2,7 +2,7 @@ class Runner
 {
     terminal()
     {
-        Run, %LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe
+        Run, wt.exe
         return
     }
 
