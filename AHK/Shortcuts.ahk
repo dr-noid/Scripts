@@ -35,7 +35,6 @@ Return
 ; TODO change this up
 ^F16::
 ^+c::
-
     Run, https://www.google.com/search?q=%clipboard%
 Return
 
