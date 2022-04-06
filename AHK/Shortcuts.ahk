@@ -10,24 +10,10 @@
 
 runner := new Runner()
 
-/*
-GENERIC MACROS
-*/
-
-; Fn + Del = F13 = Discord mute mic
-; Fn + PgUp = F14 = Discord deafen
-; Fn + PgDn = F15 = Discord leave call
-
 ; Launch Windows Terminal
 ; Left Windows + `(Grave)
 <#`::
     runner.terminal()
-Return
-
-; undefined
-; Fn + End 
-F16::
-    runner.undefined()
 Return
 
 ; Search latest copied string on google.
