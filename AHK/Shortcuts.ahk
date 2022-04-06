@@ -25,7 +25,7 @@ GENERIC MACROS
 Return
 
 ; undefined
-; Fn + PgDn 
+; Fn + End 
 F16::
     runner.undefined()
 Return
