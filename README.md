@@ -6,18 +6,20 @@ My keyboard bindings and scripts used on my GMMK Pro
 
 ### Keybinds
 
-* fn + del = f13
-* fn + pgup = f14
-* fn + pgdn = f15
-* fn + end = f16
+- <kbd>Fn</kbd><kbd>Del</kbd> : f13
+- <kbd>Fn</kbd><kbd>PgUp</kbd> : f14
+- <kbd>Fn</kbd><kbd>PgDn</kbd> : f15
+- <kbd>Fn</kbd><kbd>End</kbd> : f16
 
 ### RGB
 
-* fn + up = cycle rgb up
-* fn + down = cycle rgb down
-* fn + right = shift rgb saturation?
-* fn + left = shift rgb saturation?
+- <kbd>Fn</kbd><kbd>Up</kbd> : cycle rgb up
+- <kbd>Fn</kbd><kbd>Down</kbd> : cycle rgb down
+- <kbd>Fn</kbd><kbd>Right</kbd> : shift rgb saturation?
+- <kbd>Fn</kbd><kbd>Left</kbd> : shift rgb saturation?
+- <kbd>Fn</kbd><kbd>w</kbd> : rgb brightness up
+- <kbd>Fn</kbd><kbd>s</kbd> : rgb brightness down
 
-### Extra
+### Utility
 
-* fn + escape = enter bootloader state (not sure about this one)
+- <kbd>Fn</kbd><kbd>\\</kbd> : enter bootloader state
