@@ -16,14 +16,6 @@ runner := new Runner()
     runner.terminal()
 Return
 
-; Search latest copied string on google.
-; Fn + Ctrl + End
-; TODO change this up
-^F16::
-^+c::
-    Run, https://www.google.com/search?q=%clipboard%
-Return
-
 ; LAlt + LCtrl + 1 = VDesktop to left
 ~<!<^1::
     Send {LCtrl down}{LWin down}{Left down}{LWin up}{LCtrl up}{Left up}
